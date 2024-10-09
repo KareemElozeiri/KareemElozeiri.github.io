@@ -1,14 +1,15 @@
-title: Researcher
-url: "https://ankitsultana.com"
-baseurl: "/researcher"
+title: Kareem Elozeiri
+url: "https://KareemElozeiri.com"
+baseurl: "/"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
+remote_theme: ankitsultana/researcher@gem
 
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/ankitsultana"
+footer_url: "https://github.com/KareemElozeiri"
 footer_text: "Page design by Ankit Sultana"
 
 sass:
