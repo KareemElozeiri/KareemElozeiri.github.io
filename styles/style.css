@@ -1,0 +1,214 @@
+/* General Styles */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure full height */
+    color: #e0e0e0; /* Light text for contrast */
+  }
+  
+  .container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #2d2d2d; /* Dark card background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 20px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+    word-wrap: break-word; /* Ensure long words break and wrap */
+    overflow-wrap: break-word; /* Alternative for better browser support */
+    white-space: normal; /* Ensure text wraps normally */
+    word-spacing: normal; /* Ensure normal spacing between words */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card h1 {
+    margin: 0 0 15px; /* Add spacing below the heading */
+    font-size: 2rem; /* Adjust heading size */
+  }
+  
+  .card p {
+    margin: 0 0 15px; /* Add spacing between paragraphs */
+    line-height: 1.6; /* Improve readability */
+    font-size: 1rem; /* Adjust paragraph text size */
+  }
+  
+  /* Link Boxes */
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .link-box {
+    background-color: #3a3a3a; /* Slightly lighter than card background */
+    color: #e0e0e0; /* Light text */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+
+
+
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .cursor {
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  /* Contact Links */
+.contact-links ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0 0 20px 0; /* Add margin below the list */
+  }
+  
+  .contact-links li {
+    margin: 10px 0; /* Add vertical spacing between list items */
+  }
+  
+  .contact-links .link-box {
+    display: block; /* Make each link a block element */
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 100%; /* Ensure the link box takes full width */
+    box-sizing: border-box; /* Include padding in width calculation */
+  }
+  
+  .contact-links .link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+ /* Publications Page Styles */
+.publications-list {
+    margin-top: 20px;
+  }
+  
+  .publications-list h2 {
+    font-size: 1.5rem;
+    margin: 20px 0 10px 0;
+    color: #e0e0e0;
+  }
+  
+  .publications-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .publications-list .publication-item {
+    background-color: #3a3a3a;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 10px 0;
+  }
+  
+  .publications-list .publication-item strong {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+  }
+  
+  .publications-list .publication-item p {
+    margin: 5px 0;
+    color: #b0b0b0;
+  }
+  
+  .publications-list .publication-item em {
+    font-style: italic;
+  }
+  
+  .publications-list .read-paper-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4dabf7;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .publications-list .read-paper-link:hover {
+    color: #6bc1ff;
+    text-decoration: underline;
+  }
+
+  .navigation-links {
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    gap: 10px; /* Space between links */
+    margin-top: 20px; /* Space above the links */
+  }
+  
+  .navigation-links .link-box {
+    display: inline-block;
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .navigation-links .link-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .cursor {
+    display: inline-block;
+    animation: blink 1s steps(1) infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
