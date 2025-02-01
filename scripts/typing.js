@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  if (sessionStorage.getItem('typingEffectExecuted')) {
+    return; 
+  }
+
+  sessionStorage.setItem('typingEffectExecuted', 'true');
+
   const elements = document.querySelectorAll('h1, h2, h3, a, strong, p');
 
   elements.forEach(el => {
@@ -10,7 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
       element.style.visibility = 'visible';
       element.textContent = '';
 
-      // Add cursor to the element
       const cursor = document.createElement('span');
       cursor.className = 'cursor';
       cursor.textContent = '|';
@@ -22,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
           element.insertBefore(document.createTextNode(text[i]), cursor);
           i++;
         } else {
-          element.removeChild(cursor);
+          element.removeChild(cursor); 
           clearInterval(typingEffect);
           resolve();
         }
